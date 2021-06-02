@@ -1,0 +1,201 @@
+.section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 4vw;
+}
+.section p{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2vw;
+}
+.progress{
+    height: 2rem;
+    margin: 1vw
+}
+.progress p{
+    align-self: center;
+    font-family: sans-serif;
+    padding-left: 1vw;
+    padding-top: 1.5vw;
+}
+.projects-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vw;
+}
+.card{
+    width: 28vw;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.glyphicon img{
+    width: 1.5vw;
+}
+.gmail{
+    display: flex;
+    margin: 1vw;
+}
+.gmail p{
+    margin-left: 1vw;
+}
+#home{
+    background-image: url(https://source.unsplash.com/user/erondu/1600x900);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+}
+
+.photo>img{
+    width: 24vw;
+    margin-right: 1vw;
+}
+.heading{
+    font-family: 'Catamaran', sans-serif;
+    padding: 1vw;
+    font-size: 4vw;
+}
+.photo-layer1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 30vw;
+    height: 29vw;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: relative;
+    left: 3vw;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+.photo-layer2{
+    margin-right: .5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 27vw;
+    height: 27vw;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.911);
+    color: white;
+    position: relative;
+    left: -2vw;
+    padding: 2vw;
+    align-items: center;
+    justify-content: center;
+    width: 29vw;
+    height: 20vw;
+}
+#fname{
+    padding: 0;
+    margin: 0;
+    border-bottom: .3vw solid white;
+    position: relative;
+    left: -3vw;
+    top: -1vw;
+    font-size: 3vw;
+}
+#lname{
+    padding: 0;
+    margin: 0;
+    border-bottom: .3vw solid white;
+    position: relative;
+    left: 6vw;
+    top: -1vw;
+    font-size: 3vw;
+}
+.info>p{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 0vw;
+    top: 1vw;
+    font-size: 1.5vw;
+}
+/* #start-btn{
+    width: 12vw;
+    height: 5vw;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0vw;
+    top: 2vw;
+    border:.4vw solid blue;
+    border-radius: .4vw;
+    font-weight: 200;
+    font-family: sans-serif;
+    transition:background-color 1s,color 1s ;
+} */
+.info-layer1{
+    margin-right: .5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 33vw;
+    height: 23vw;
+    background-color: rgba(0, 0, 0, 0.815);
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+/* #start-btn:hover{
+    background-color: blue;
+    color: white;
+} */
+.brand{
+    font-family: 'Press Start 2P', cursive;
+}
+@media only screen and (max-width:760px)
+{
+    .projects-cont{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 60vw;
+    }
+
+    .photo-layer1{
+        display: none;
+        overflow: hidden;
+    }
+    .info-layer1{
+        width: 60vw;
+        margin: 15vw;
+    }
+    .info{
+        width: 50vw;
+        
+    }
+    #fname{
+        display: none;
+    }
+    #lname{
+        display: none;
+    }
+    .info>p{
+        left: 4vw;
+        top: 0vw;
+        font-size: 4vw;
+        font-family: 'Press Start 2P', cursive
+    }
+    #home{
+        height: auto;
+    }
+   
+}
